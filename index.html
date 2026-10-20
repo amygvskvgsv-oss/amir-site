@@ -2,318 +2,261 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>امیر ❤️ آیسان</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08060d">
+<title>آشتی؟💍</title>
 
 <style>
-:root {
-  --pink: #ff3d91;
-  --violet: #a855f7;
-  --muted: #cbbbd8;
-}
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
 
-* {
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: #fff;
-  text-align: center;
-  overflow-x: hidden;
-
+body{
+  margin:0;
+  min-height:100vh;
+  padding:24px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background:
-    radial-gradient(ellipse at 15% 15%, #4c145b88 0, transparent 38%),
-    radial-gradient(ellipse at 85% 80%, #7b174e66 0, transparent 40%),
-    linear-gradient(145deg, #05040b 0%, #100818 48%, #080610 100%);
+    radial-gradient(ellipse at 15% 15%,#5b126b55,transparent 40%),
+    radial-gradient(ellipse at 85% 85%,#b3124940,transparent 40%),
+    #08060d;
+  color:white;
+  font-family:Vazirmatn,Tahoma,sans-serif;
 }
 
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: .25;
-  pointer-events: none;
+.container{width:100%;max-width:440px}
+
+.label{
+  text-align:center;
+  color:#c5a8d9;
+  font-size:11px;
+  letter-spacing:3px;
+  margin-bottom:22px;
 }
 
-body::before {
-  background: #a21caf;
-  top: -80px;
-  right: -80px;
+.card{
+  padding:35px 24px 28px;
+  text-align:center;
+  border-radius:28px;
+  border:1px solid #ffffff20;
+  background:linear-gradient(145deg,#ffffff0d,#ffffff03);
+  box-shadow:0 25px 90px #0009;
+  position:relative;
+  overflow:hidden;
 }
 
-body::after {
-  background: #e11d78;
-  bottom: -90px;
-  left: -80px;
+.card:before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:15%;
+  left:15%;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#ff287f,#a855f7,transparent);
 }
 
-.wrap {
-  width: 100%;
-  max-width: 460px;
-  position: relative;
-  z-index: 1;
+.ring{
+  font-size:36px;
+  animation:float 3s infinite;
 }
 
-.badge {
-  display: inline-block;
-  padding: 8px 15px;
-  border: 1px solid #ff6ab755;
-  border-radius: 30px;
-  color: #ffc4e0;
-  background: #ff3d9110;
-  font-size: 12px;
-  letter-spacing: .3px;
-  margin-bottom: 15px;
+.title{
+  font-size:clamp(42px,12vw,58px);
+  font-weight:900;
+  margin:8px 0;
+  background:linear-gradient(110deg,#fff,#ff8ac0,#c084fc);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
 
-.card {
-  padding: 25px 22px 22px;
-  border: 1px solid #ffffff1c;
-  border-radius: 28px;
-  background: linear-gradient(150deg, #ffffff0d, #ffffff04);
-  box-shadow: 0 25px 80px #0009, 0 0 35px #e11d7810;
-  backdrop-filter: blur(14px);
+.line{
+  width:70px;
+  height:3px;
+  margin:16px auto 25px;
+  background:linear-gradient(90deg,#ff287f,#a855f7);
+  border-radius:10px;
 }
 
-.heart {
-  font-size: 32px;
-  filter: drop-shadow(0 0 12px #ff3d91);
-  animation: beat 1.6s infinite;
+.subtitle{
+  color:#c5b5d0;
+  font-size:13px;
+  margin-bottom:25px;
 }
 
-h1 {
-  margin: 9px 0 8px;
-  font-size: clamp(28px, 7vw, 38px);
-  letter-spacing: -1px;
+.box{
+  padding:20px 16px;
+  border:1px solid #ffffff15;
+  border-radius:18px;
+  background:#ffffff05;
+  margin-bottom:22px;
 }
 
-h1 span {
-  color: #ff6eae;
-  text-shadow: 0 0 22px #ff3d9140;
+.box p{
+  margin:0;
+  color:#f4eaf8;
+  font-size:15px;
+  line-height:2.3;
 }
 
-.subtitle {
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 2;
-  margin: 0 0 21px;
+.small{
+  display:block;
+  margin-top:10px;
+  font-size:12px;
+  color:#a995b8;
 }
 
-.photo {
-  height: 285px;
-  border-radius: 21px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid #ff7ab733;
-
-  background: linear-gradient(
-    145deg,
-    #1a0b22,
-    #331126 55%,
-    #120b1b
-  );
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.question{
+  font-size:14px;
+  color:#e4d5eb;
+  margin:20px 0 16px;
 }
 
-.photo::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, #09050bd9, transparent 55%);
+.button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  width:100%;
+  min-height:54px;
+  padding:14px 18px;
+  text-decoration:none;
+  border-radius:16px;
+  font-size:14px;
+  font-weight:700;
+  color:white;
+  background:linear-gradient(110deg,#d92372,#8439cf);
+  box-shadow:0 8px 30px #c0266d40;
+  transition:transform .2s;
 }
 
-.photo-content {
-  position: relative;
-  z-index: 1;
+.button:hover{transform:translateY(-3px)}
+
+.hint{
+  font-size:11px;
+  line-height:2;
+  color:#9785a4;
+  margin:14px 0 0;
 }
 
-.photo .big {
-  font-size: 66px;
-  filter: drop-shadow(0 0 22px #ff3d9177);
+.footer{
+  text-align:center;
+  margin-top:22px;
+  color:#776581;
+  font-size:10px;
 }
 
-.photo .caption {
-  font-size: 14px;
-  color: #ffe0ef;
-  margin-top: 9px;
+.footer span{color:#ff5b9b}
+
+.credit{
+  text-align:center;
+  margin-top:12px;
+  font-size:9px;
+  color:#685774;
+  letter-spacing:.4px;
 }
 
-.message {
-  margin: 20px 0 17px;
-  color: #f4e7f1;
-  font-size: 14px;
-  line-height: 2.1;
+.heart{
+  position:fixed;
+  bottom:-30px;
+  opacity:0;
+  pointer-events:none;
+  animation:rise linear forwards;
 }
 
-.controls {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+@keyframes rise{
+  0%{transform:translateY(0);opacity:0}
+  15%{opacity:.65}
+  100%{transform:translateY(-110vh) rotate(35deg);opacity:0}
 }
 
-button {
-  border: 1px solid #ff79b955;
-  border-radius: 30px;
-  padding: 13px 22px;
-  color: white;
-  font-family: inherit;
-  font-size: 14px;
-  cursor: pointer;
-  transition: .2s;
+@keyframes float{
+  50%{transform:translateY(-7px)}
 }
 
-#play {
-  background: linear-gradient(110deg, #d92678, #9b35d3);
-  box-shadow: 0 8px 28px #e11d7833;
-}
-
-#play:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 32px #e11d7855;
-}
-
-#love {
-  background: #ffffff08;
-}
-
-.note {
-  margin-top: 17px;
-  color: #9f8da9;
-  font-size: 10px;
-  line-height: 1.8;
-}
-
-.spark {
-  color: #ff77b9;
-}
-
-@keyframes beat {
-  0%, 100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.12);
-  }
-}
-
-@media (max-width: 400px) {
-  .card {
-    padding: 20px 15px;
-  }
-
-  .photo {
-    height: 245px;
-  }
+@media(max-width:380px){
+  .card{padding:28px 17px}
+  .box p{font-size:14px}
 }
 </style>
 </head>
 
 <body>
+<main class="container">
 
-<main class="wrap">
-
-  <div class="badge">
-    ✦ یه گوشه‌ی کوچیک از دنیای ما ✦
-  </div>
+  <div class="label">A LITTLE STEP TOWARD PEACE</div>
 
   <section class="card">
 
-    <div class="heart">♥️</div>
+    <div class="ring">💍</div>
 
-    <h1>
-      <span>امیر</span>
-      <span class="spark">♡</span>
-      آیسان
-    </h1>
+    <h1 class="title">آشتی؟</h1>
+
+    <div class="line"></div>
 
     <p class="subtitle">
-      برای تو، که یه حس قشنگی توی دنیامی
+      بعضی دلخوری‌ها ارزش دور شدن ندارن...
     </p>
 
-    <div class="photo">
-      <div class="photo-content">
-        <div class="big">♡</div>
-        <div class="caption">
-          عکس قشنگمون اینجا میاد
-        </div>
-      </div>
+    <div class="box">
+      <p>
+        نمی‌خوام الکی همه‌چی رو قشنگ جلوه بدم؛<br>
+        فقط دلم می‌خواد اگه تو هم بخوای،<br>
+        از این دلخوری رد بشیم و دوباره خوب باشیم. 🖤
+      </p>
+
+      <span class="small">
+        نه اصراری هست، نه قراره کسی خودش رو کوچیک کنه.
+      </span>
     </div>
 
-    <p class="message">
-      بعضی آدما خودشون یه ح
-
-س خوبن…<br>
-      تو برای من از همونایی ❤️
+    <p class="question">
+      اگه آشتی کردی، بزن رو این دکمه ❤️
     </p>
 
-    <div class="controls">
+    <a
+      class="button"
+      href="https://splus.ir/Amirpezhwak"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💌 &nbsp; باشه، آشتی کنیم؟
+    </a>
 
-      <button id="play" onclick="toggleMusic()">
-        ♫ &nbsp; پخش آهنگ
-      </button>
+    <p class="hint">
+      یه پیام کوچیک کافیه؛ اد
 
-      <button id="love" onclick="showLove()">
-        یه پیام کوچیک ✨
-      </button>
-
-    </div>
-
-    <p class="note">
-      با عشق ساخته شده <span class="spark">♥️</span><br>
-      پیش‌نمایش موقت؛ برای عکس و آهنگ واقعی باید فایل‌ها اضافه شوند.
+امه‌ش با خودمونه. ✨
     </p>
-
-    <audio id="music" src="song.mp3"></audio>
 
   </section>
+
+  <div class="footer">
+    MADE WITH <span>♥️</span> &nbsp; A LITTLE COURAGE
+  </div>
+
+  <div class="credit">
+    ساخته شده توسط امیرپژواک
+  </div>
 
 </main>
 
 <script>
-function toggleMusic() {
-
-  const audio = document.getElementById("music");
-  const button = document.getElementById("play");
-
-  if (audio.paused) {
-
-    audio.play()
-      .then(() => {
-        button.innerHTML = "Ⅱ &nbsp; توقف آهنگ";
-      })
-      .catch(() => {
-        alert("برای پخش آهنگ، فایل song.mp3 باید کنار فایل سایت باشد.");
-      });
-
-  } else {
-
-    audio.pause();
-    button.innerHTML = "♫ &nbsp; پخش آهنگ";
-
-  }
+function heart(){
+  let e=document.createElement('div');
+  e.className='heart';
+  e.textContent=['♥️','♡','✦'][Math.floor(Math.random()*3)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.fontSize=(12+Math.random()*17)+'px';
+  e.style.color=Math.random()>.5?'#ff5b9b':'#bd83ff';
+  e.style.animationDuration=(7+Math.random()*7)+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),15000);
 }
 
-function showLove() {
-
-  alert("امیر ❤️ آیسان — قشنگ‌ترین چیزها گاهی ساده‌ترینن.");
-
-}
+setInterval(heart,850);
 </script>
 
 </body>
