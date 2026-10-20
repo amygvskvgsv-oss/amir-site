@@ -1,1 +1,320 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>امیر ❤️ آیسان</title>
 
+<style>
+:root {
+  --pink: #ff3d91;
+  --violet: #a855f7;
+  --muted: #cbbbd8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(ellipse at 15% 15%, #4c145b88 0, transparent 38%),
+    radial-gradient(ellipse at 85% 80%, #7b174e66 0, transparent 40%),
+    linear-gradient(145deg, #05040b 0%, #100818 48%, #080610 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: .25;
+  pointer-events: none;
+}
+
+body::before {
+  background: #a21caf;
+  top: -80px;
+  right: -80px;
+}
+
+body::after {
+  background: #e11d78;
+  bottom: -90px;
+  left: -80px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ff6ab755;
+  border-radius: 30px;
+  color: #ffc4e0;
+  background: #ff3d9110;
+  font-size: 12px;
+  letter-spacing: .3px;
+  margin-bottom: 15px;
+}
+
+.card {
+  padding: 25px 22px 22px;
+  border: 1px solid #ffffff1c;
+  border-radius: 28px;
+  background: linear-gradient(150deg, #ffffff0d, #ffffff04);
+  box-shadow: 0 25px 80px #0009, 0 0 35px #e11d7810;
+  backdrop-filter: blur(14px);
+}
+
+.heart {
+  font-size: 32px;
+  filter: drop-shadow(0 0 12px #ff3d91);
+  animation: beat 1.6s infinite;
+}
+
+h1 {
+  margin: 9px 0 8px;
+  font-size: clamp(28px, 7vw, 38px);
+  letter-spacing: -1px;
+}
+
+h1 span {
+  color: #ff6eae;
+  text-shadow: 0 0 22px #ff3d9140;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+  margin: 0 0 21px;
+}
+
+.photo {
+  height: 285px;
+  border-radius: 21px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ff7ab733;
+
+  background: linear-gradient(
+    145deg,
+    #1a0b22,
+    #331126 55%,
+    #120b1b
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #09050bd9, transparent 55%);
+}
+
+.photo-content {
+  position: relative;
+  z-index: 1;
+}
+
+.photo .big {
+  font-size: 66px;
+  filter: drop-shadow(0 0 22px #ff3d9177);
+}
+
+.photo .caption {
+  font-size: 14px;
+  color: #ffe0ef;
+  margin-top: 9px;
+}
+
+.message {
+  margin: 20px 0 17px;
+  color: #f4e7f1;
+  font-size: 14px;
+  line-height: 2.1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid #ff79b955;
+  border-radius: 30px;
+  padding: 13px 22px;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#play {
+  background: linear-gradient(110deg, #d92678, #9b35d3);
+  box-shadow: 0 8px 28px #e11d7833;
+}
+
+#play:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px #e11d7855;
+}
+
+#love {
+  background: #ffffff08;
+}
+
+.note {
+  margin-top: 17px;
+  color: #9f8da9;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.spark {
+  color: #ff77b9;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .photo {
+    height: 245px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="wrap">
+
+  <div class="badge">
+    ✦ یه گوشه‌ی کوچیک از دنیای ما ✦
+  </div>
+
+  <section class="card">
+
+    <div class="heart">♥️</div>
+
+    <h1>
+      <span>امیر</span>
+      <span class="spark">♡</span>
+      آیسان
+    </h1>
+
+    <p class="subtitle">
+      برای تو، که یه حس قشنگی توی دنیامی
+    </p>
+
+    <div class="photo">
+      <div class="photo-content">
+        <div class="big">♡</div>
+        <div class="caption">
+          عکس قشنگمون اینجا میاد
+        </div>
+      </div>
+    </div>
+
+    <p class="message">
+      بعضی آدما خودشون یه ح
+
+س خوبن…<br>
+      تو برای من از همونایی ❤️
+    </p>
+
+    <div class="controls">
+
+      <button id="play" onclick="toggleMusic()">
+        ♫ &nbsp; پخش آهنگ
+      </button>
+
+      <button id="love" onclick="showLove()">
+        یه پیام کوچیک ✨
+      </button>
+
+    </div>
+
+    <p class="note">
+      با عشق ساخته شده <span class="spark">♥️</span><br>
+      پیش‌نمایش موقت؛ برای عکس و آهنگ واقعی باید فایل‌ها اضافه شوند.
+    </p>
+
+    <audio id="music" src="song.mp3"></audio>
+
+  </section>
+
+</main>
+
+<script>
+function toggleMusic() {
+
+  const audio = document.getElementById("music");
+  const button = document.getElementById("play");
+
+  if (audio.paused) {
+
+    audio.play()
+      .then(() => {
+        button.innerHTML = "Ⅱ &nbsp; توقف آهنگ";
+      })
+      .catch(() => {
+        alert("برای پخش آهنگ، فایل song.mp3 باید کنار فایل سایت باشد.");
+      });
+
+  } else {
+
+    audio.pause();
+    button.innerHTML = "♫ &nbsp; پخش آهنگ";
+
+  }
+}
+
+function showLove() {
+
+  alert("امیر ❤️ آیسان — قشنگ‌ترین چیزها گاهی ساده‌ترینن.");
+
+}
+</script>
+
+</body>
+</html>
